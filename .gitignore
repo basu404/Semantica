@@ -1,0 +1,45 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Embeddings and model files (too large for git)
+embeddings/
+*.pkl
+*.npy
+
+# Raw corpus (too large for git)
+20_newsgroups/
+20_newsgroups.tar.gz
+20_newsgroups.zip
+mini_newsgroups.tar.gz
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+uvicorn.log

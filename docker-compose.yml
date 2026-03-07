@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  semantic-search:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount embeddings directory so the model persists between container restarts
+      - ./embeddings:/app/embeddings
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
